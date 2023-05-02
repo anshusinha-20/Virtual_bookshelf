@@ -47,4 +47,6 @@ with app.app_context():
     # create a record
     new_book = Book(id=1, title="Harry Potter", author="J.K. Rowling", rating=9.3)
     db.session.add(new_book)
+
+    # commit the changes
     db.session.commit()
